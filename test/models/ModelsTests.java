@@ -16,11 +16,23 @@ public class ModelsTests extends WithApplication
 	public void setUp ()
 	{
 		start(fakeApplication(inMemoryDatabase()));
-		new User("test@test.com", "Test", "test").save();
-		new User("test2@test.com", "Test2", "test").save();
+		User user = new User("test@test.com", "Test", "test");
+		user.save();
+		User user2 = new User("test2@test.com", "Test2", "test");
+		user2.save();
 		
-		Project.create("Project1", "projects", "test@test.com");
-		Project.create("Project2", "projects", "test2@test.com");
+		Project project = Project.create("Project1", "projects", "test@test.com");
+		Project project2 = Project.create("Project2", "projects", "test2@test.com");
+		
+		Task t1 = new Task();
+		t1.title = "Codify tests";
+		t1.assignedTo = user;
+		t1.done = true;
+		t1.save();
+		Task t2 = new Task();
+		t2.title = "Keep codifying tests!";
+		t2.project = project;
+		t2.save();
 	}
 	
 	@Test
@@ -45,5 +57,13 @@ public class ModelsTests extends WithApplication
 		List<Project> results = Project.findInvolving("test@test.com");
 		assertEquals(1, results.size());
 		assertEquals("Project1", results.get(0).name);
+	}
+	
+	@Test
+	public void findTodoTasksInvolving ()
+	{
+		List<Task> results = Task.findTodoInvolving("test@test.com");
+		assertEquals(1, results.size());
+		assertEquals("Keep codifying tests!", results.get(0).title);
 	}
 }
