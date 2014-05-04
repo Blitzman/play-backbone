@@ -1,4 +1,4 @@
-@(projects: List[Project])(content: Html)
+@(projects: List[Project], user: User)(content: Html)
 
 <!DOCTYPE html>
 
@@ -14,7 +14,7 @@
         	<a href="@routes.Application.index" id="logo"><span>Play!</span> + Backbone</a>
 
             <dl id="user">
-                <dt>User</dt>
+                <dt>@user.name <span>(@user.email)</span></dt>
                 <dd>
                     <a href="@routes.Application.logout()">Logout</a>
                 </dd>
