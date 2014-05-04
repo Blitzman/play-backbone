@@ -45,6 +45,14 @@ public class Application extends Controller
 	{
 		return ok(login.render(Form.form(Login.class)));
 	}
+
+	public static Result logout()
+	{
+		session().clear();
+		flash("success", "You've been logged out.");
+
+		return redirect(routes.Application.login());
+	}
 	
 	@Security.Authenticated(Secured.class)
     public static Result index() 
