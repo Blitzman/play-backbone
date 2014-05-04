@@ -46,6 +46,7 @@ public class Application extends Controller
 		return ok(login.render(Form.form(Login.class)));
 	}
 	
+	@Security.Authenticated(Secured.class)
     public static Result index() 
     {
         return ok(index.render(Project.find.all(), Task.find.all()));
