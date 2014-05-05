@@ -1,0 +1,6 @@
+\beamer@endinputifotherversion {3.10pt}
+\beamer@sectionintoc {1}{\scshape Introduction}{3}{0}{1}
+\beamer@sectionintoc {2}{\scshape Play! Framework}{4}{0}{2}
+\beamer@subsectionintoc {2}{1}{What is Play! Framework?}{4}{0}{2}
+\beamer@sectionintoc {3}{\scshape Backbone.js}{5}{0}{3}
+\beamer@subsectionintoc {3}{1}{What is Backbone.js?}{5}{0}{3}

@@ -1,0 +1,20 @@
+\providecommand{\bysame}{\leavevmode\hbox to3em{\hrulefill}\thinspace}
+\providecommand{\MR}{\relax\ifhmode\unskip\space\fi MR }
+% \MRhref is called by the amsart/book/proc definition of \MR.
+\providecommand{\MRhref}[2]{%
+  \href{http://www.ams.org/mathscinet-getitem?mr=#1}{#2}
+}
+\providecommand{\href}[2]{#2}
+\begin{thebibliography}{ARTdM09}
+
+\bibitem[ARTdM09]{Aldavert2009}
+David Aldavert, Arnau Ramisa, Ricardo Toledo, and Ramon~L\'opez de~M\'antaras,
+  \emph{Visual registration method for a low cost robot}, vol. 5815, Springer,
+  Springer, 2009, pp.~204--214.
+
+\bibitem[BM92]{Besl1992}
+P.J. Besl and Neil~D. McKay, \emph{A method for registration of 3-d shapes},
+  Pattern Analysis and Machine Intelligence, IEEE Transactions on \textbf{14}
+  (1992), no.~2, 239--256.
+
+\end{thebibliography}
