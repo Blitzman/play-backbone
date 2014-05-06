@@ -45,6 +45,17 @@
 \renewcommand{\>}{\end{column}}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\setbeamertemplate{section page}
+{
+  \begin{centering}
+    \vskip1em\par
+    \begin{beamercolorbox}[sep=4pt,center]{part title}
+      \usebeamerfont{section title}\insertsection\par
+    \end{beamercolorbox}
+  \end{centering}
+}
+
+\AtBeginSection{\frame{\sectionpage}}
 
 
 
@@ -84,12 +95,52 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{\scshape Introduction}
-\begin{frame}{Introduction}
+\subsection{\scshape Trends}
+\begin{frame}
+\frametitle{Trends}
 	\begin{itemize}
-		\item{Web development till the date...}
-		\item{Talk about Play! context and server side frameworks}
-		\item{Talk about Backbone.js and client side frameworks}
-		\item{How server side and client side combine...}
+		\item{Enterprises's needs lead the market.}
+		\item{Offering services: SOA wins.}
+		\item{The web changes the status quo.}
+		\item{SOA is not web compliant.}
+		\item{Exposing services through the web requires extra effort.}
+		\item{The game changes: new possibilities and challenges.}
+	\end{itemize}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{\scshape Challenges}
+\begin{frame}
+\frametitle{Challenges}
+	\begin{itemize}
+		\item{Real time data has to be pushed.}
+		\item{Huge amounts of data.}
+		\item{Need for scalability and integration.}
+		\item{Easy integration and accessibility.}
+		\item{Interoperability.}
+	\end{itemize}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{\scshape Addressing the challenges}
+\begin{frame}
+\frametitle{Addressing the challenges}
+	\begin{itemize}
+		\item{Embrace the internet.}
+		\begin{itemize}
+			\item{HTTP Protocol}
+			\item{HTML5}
+			\item{XML/JSON}
+			\item{Javascript}
+			\item{CSS}
+		\end{itemize}
+		\item{Paradigm shift: client-side.}
+		\item{Simplicity.}
+		\item{A framework to rule them all.}
 	\end{itemize}
 \end{frame}
 
@@ -99,7 +150,57 @@
 \section{\scshape Play! Framework}
 \subsection{What is Play! Framework?}
 \begin{frame}{What is Play! Framework?}
+	\begin{itemize}
+		\item{A web framework focused on:}
+		\begin{itemize}
+			\item{Simplicity.}
+			\item{Productivity.}
+			\item{Scalability.}
+			\item{Designed for the modern web.}
+			\begin{itemize}
+				\item{Concentrate on server-side.}
+				\item{Delegate AMAP to the client.}
+			\end{itemize}
+			\item{Embrace internet standards.}
+			\item{Java and Scala.}
+			\item{RESTful architecture web applications.}
+			\item{Model-View-Controller.}
+		\end{itemize}
+	\end{itemize}
+\end{frame}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{RESTful Architecture}
+\begin{frame}{RESTful architecture}
+	\begin{itemize}
+		\item{Implemented using HTTP and REST principles.}
+		\item{Representational state transfer (REST) principles:}
+		\begin{itemize}
+			\item{Uniform interface.}
+			\item{Stateless.}
+			\item{Caching.}
+			\item{Layers.}
+			\item{Code on demand.}
+		\end{itemize}
+		\item{Goals:}
+		\begin{itemize}
+			\item{Performance.}
+			\item{Scalability.}
+			\item{Portability.}
+			\item{Reliability.}
+			\item{SIMPLICITY.}
+		\end{itemize}
+	\end{itemize}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{The MVC application model}
+\begin{frame}{The MVC application model}
+	\includegraphics[height=200px]{diagrams_path.png}
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -117,8 +218,9 @@
 \section*{\scshape References}
 \begin{frame}[allowframebreaks]
 	\normalsize
-	\nocite{Aldavert2009}
-	\nocite{Besl1992}
+	\nocite{PlayForJava}
+	\nocite{PlayForScala}
+	\nocite{PlayFrameworkCookbook}
 	\frametitle{References}
 	\bibliographystyle{amsalpha}
 	\bibliography{biblio.bib}

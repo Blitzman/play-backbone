@@ -3,46 +3,51 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: play.aux
 The style file: amsalpha.bst
 Database file #1: biblio.bib.bib
-Warning--missing booktitle in Aldavert2009
-You've used 2 entries,
+Name 1 in "Peter Hilton, Erik Bakker, and Francisco Canedo" has a comma at the end for entry PlayForScala
+while executing---line 1286 of file amsalpha.bst
+Name 1 in "Peter Hilton, Erik Bakker, and Francisco Canedo" has a comma at the end for entry PlayForScala
+while executing---line 1286 of file amsalpha.bst
+Name 1 in "Peter Hilton, Erik Bakker, and Francisco Canedo" has a comma at the end for entry PlayForScala
+while executing---line 1382 of file amsalpha.bst
+You've used 3 entries,
             2624 wiz_defined-function locations,
-            576 strings with 4803 characters,
-and the built_in function-call counts, 1042 in all, are:
-= -- 96
-> -- 50
+            572 strings with 4641 characters,
+and the built_in function-call counts, 947 in all, are:
+= -- 69
+> -- 46
 < -- 1
-+ -- 19
-- -- 18
-* -- 88
-:= -- 168
-add.period$ -- 2
-call.type$ -- 2
-change.case$ -- 14
-chr.to.int$ -- 2
++ -- 14
+- -- 14
+* -- 62
+:= -- 167
+add.period$ -- 3
+call.type$ -- 3
+change.case$ -- 17
+chr.to.int$ -- 3
 cite$ -- 3
-duplicate$ -- 40
-empty$ -- 73
-format.name$ -- 20
-if$ -- 214
+duplicate$ -- 46
+empty$ -- 82
+format.name$ -- 18
+if$ -- 186
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 4
-newline$ -- 16
-num.names$ -- 6
-pop$ -- 13
+missing$ -- 9
+newline$ -- 19
+num.names$ -- 9
+pop$ -- 27
 preamble$ -- 1
-purify$ -- 16
+purify$ -- 20
 quote$ -- 0
-skip$ -- 35
+skip$ -- 37
 stack$ -- 0
-substring$ -- 64
-swap$ -- 12
+substring$ -- 21
+swap$ -- 3
 text.length$ -- 1
-text.prefix$ -- 0
+text.prefix$ -- 1
 top$ -- 0
-type$ -- 16
-warning$ -- 1
-while$ -- 9
-width$ -- 4
-write$ -- 33
-(There was 1 warning)
+type$ -- 12
+warning$ -- 0
+while$ -- 8
+width$ -- 5
+write$ -- 39
+(There were 3 error messages)

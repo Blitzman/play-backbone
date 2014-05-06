@@ -8,25 +8,46 @@
 \headcommand {\beamer@subsectionpages {1}{2}}
 \headcommand {\slideentry {1}{0}{3}{3/3}{}{0}}
 \headcommand {\beamer@framepages {3}{3}}
-\headcommand {\sectionentry {2}{\scshape Play! Framework}{4}{\scshape Play! Framework}{0}}
-\headcommand {\beamer@sectionpages {3}{3}}
-\headcommand {\beamer@subsectionpages {3}{3}}
-\headcommand {\beamer@subsectionentry {0}{2}{1}{4}{What is Play! Framework?}}\headcommand {\beamer@subsectionpages {4}{3}}
-\headcommand {\slideentry {2}{1}{1}{4/4}{What is Play! Framework?}{0}}
+\headcommand {\beamer@subsectionentry {0}{1}{1}{4}{\scshape Trends}}\headcommand {\beamer@subsectionpages {3}{3}}
+\headcommand {\slideentry {1}{1}{1}{4/4}{\scshape Trends}{0}}
 \headcommand {\beamer@framepages {4}{4}}
-\headcommand {\sectionentry {3}{\scshape Backbone.js}{5}{\scshape Backbone.js}{0}}
-\headcommand {\beamer@sectionpages {4}{4}}
-\headcommand {\beamer@subsectionpages {4}{4}}
-\headcommand {\beamer@subsectionentry {0}{3}{1}{5}{What is Backbone.js?}}\headcommand {\beamer@subsectionpages {5}{4}}
-\headcommand {\slideentry {3}{1}{1}{5/5}{What is Backbone.js?}{0}}
+\headcommand {\beamer@subsectionentry {0}{1}{2}{5}{\scshape Challenges}}\headcommand {\beamer@subsectionpages {4}{4}}
+\headcommand {\slideentry {1}{2}{1}{5/5}{\scshape Challenges}{0}}
 \headcommand {\beamer@framepages {5}{5}}
-\headcommand {\sectionentry {4}{\scshape References}{6}{\scshape References}{0}}
-\headcommand {\beamer@sectionpages {5}{5}}
-\headcommand {\beamer@subsectionpages {5}{5}}
-\headcommand {\slideentry {4}{0}{2}{6/6}{}{0}}
+\headcommand {\beamer@subsectionentry {0}{1}{3}{6}{\scshape Addressing the challenges}}\headcommand {\beamer@subsectionpages {5}{5}}
+\headcommand {\slideentry {1}{3}{1}{6/6}{\scshape Addressing the challenges}{0}}
 \headcommand {\beamer@framepages {6}{6}}
-\headcommand {\beamer@partpages {1}{6}}
+\headcommand {\sectionentry {2}{\scshape Play! Framework}{7}{\scshape Play! Framework}{0}}
+\headcommand {\beamer@sectionpages {3}{6}}
 \headcommand {\beamer@subsectionpages {6}{6}}
-\headcommand {\beamer@sectionpages {6}{6}}
-\headcommand {\beamer@documentpages {6}}
-\headcommand {\def \inserttotalframenumber {6}}
+\headcommand {\slideentry {2}{0}{2}{7/7}{}{0}}
+\headcommand {\beamer@framepages {7}{7}}
+\headcommand {\beamer@subsectionentry {0}{2}{1}{8}{What is Play! Framework?}}\headcommand {\beamer@subsectionpages {7}{7}}
+\headcommand {\slideentry {2}{1}{1}{8/8}{What is Play! Framework?}{0}}
+\headcommand {\beamer@framepages {8}{8}}
+\headcommand {\beamer@subsectionentry {0}{2}{2}{9}{RESTful Architecture}}\headcommand {\beamer@subsectionpages {8}{8}}
+\headcommand {\slideentry {2}{2}{1}{9/9}{RESTful Architecture}{0}}
+\headcommand {\beamer@framepages {9}{9}}
+\headcommand {\beamer@subsectionentry {0}{2}{3}{10}{The MVC application model}}\headcommand {\beamer@subsectionpages {9}{9}}
+\headcommand {\slideentry {2}{3}{1}{10/10}{The MVC application model}{0}}
+\headcommand {\beamer@framepages {10}{10}}
+\headcommand {\sectionentry {3}{\scshape Backbone.js}{11}{\scshape Backbone.js}{0}}
+\headcommand {\beamer@sectionpages {7}{10}}
+\headcommand {\beamer@subsectionpages {10}{10}}
+\headcommand {\slideentry {3}{0}{2}{11/11}{}{0}}
+\headcommand {\beamer@framepages {11}{11}}
+\headcommand {\beamer@subsectionentry {0}{3}{1}{12}{What is Backbone.js?}}\headcommand {\beamer@subsectionpages {11}{11}}
+\headcommand {\slideentry {3}{1}{1}{12/12}{What is Backbone.js?}{0}}
+\headcommand {\beamer@framepages {12}{12}}
+\headcommand {\sectionentry {4}{\scshape References}{13}{\scshape References}{0}}
+\headcommand {\beamer@sectionpages {11}{12}}
+\headcommand {\beamer@subsectionpages {12}{12}}
+\headcommand {\slideentry {4}{0}{2}{13/13}{}{0}}
+\headcommand {\beamer@framepages {13}{13}}
+\headcommand {\slideentry {4}{0}{3}{14/14}{}{0}}
+\headcommand {\beamer@framepages {14}{14}}
+\headcommand {\beamer@partpages {1}{14}}
+\headcommand {\beamer@subsectionpages {13}{14}}
+\headcommand {\beamer@sectionpages {13}{14}}
+\headcommand {\beamer@documentpages {14}}
+\headcommand {\def \inserttotalframenumber {14}}
