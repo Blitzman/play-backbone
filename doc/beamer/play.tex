@@ -95,7 +95,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{\scshape Introduction}
-\subsection{\scshape Trends}
+\subsection{Trends}
 \begin{frame}
 \frametitle{Trends}
 	\begin{itemize}
@@ -111,7 +111,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\subsection{\scshape Challenges}
+\subsection{Challenges}
 \begin{frame}
 \frametitle{Challenges}
 	\begin{itemize}
@@ -126,7 +126,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\subsection{\scshape Addressing the challenges}
+\subsection{Addressing the challenges}
 \begin{frame}
 \frametitle{Addressing the challenges}
 	\begin{itemize}
@@ -198,8 +198,43 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\subsection{Project layout}
+\begin{frame}{Project layout}
+	\includegraphics[height=200px]{layout.png}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \subsection{The MVC application model}
 \begin{frame}{The MVC application model}
+	\begin{itemize}
+		\item{Models in app/models}
+		\begin{itemize}
+			\item{Java/Scala classes.}
+			\item{Data + Operations, mainly object-oriented.}
+			\item{Business logic and storage.}
+		\end{itemize}
+		\item{Views in app/views}
+		\begin{itemize}
+			\item{HTML/XML/JSON/Scala templates.}
+			\item{Directives as placeholders for data.}
+			\item{Render models to user interfaces.}
+		\end{itemize}
+		\item{Controllers in app/controllers}
+		\begin{itemize}
+			\item{Java/Scala classes.}
+			\item{Methods as actions, mainly procedural.}
+			\item{Receive requests, act (update models + render views) and response.}
+		\end{itemize}
+	\end{itemize}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Request/Response path}
+\begin{frame}{Request/Response path}
 	\includegraphics[height=200px]{diagrams_path.png}
 \end{frame}
 
