@@ -55,8 +55,18 @@
   \end{centering}
 }
 
-\AtBeginSection{\frame{\sectionpage}}
-
+\AtBeginSection[]
+{
+\frame{\sectionpage}
+\begin{frame}<beamer>
+\frametitle{Outline}
+\tableofcontents[
+  currentsection,
+  sectionstyle=show/hide,
+  subsectionstyle=show/show/hide
+]
+\end{frame}
+}
 
 
 \begin{document}
@@ -88,7 +98,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{frame}{Table of Contents}
-\tableofcontents
+\tableofcontents[hideallsubsections]
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -141,6 +151,7 @@
 		\item{Paradigm shift: client-side.}
 		\item{Simplicity.}
 		\item{A framework to rule them all.}
+		\item{\Large{\textbf{Patterns for enterprise applications}.}}
 	\end{itemize}
 \end{frame}
 
@@ -203,10 +214,35 @@
 	\includegraphics[height=200px]{layout.png}
 \end{frame}
 
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\subsection{The MVC application model}
+\section{\scshape Patterns in Play!}
+\begin{frame}{Patterns in Play!}
+	\begin{itemize}
+		\item{\textbf{Model-View-Controller}.}
+		\item{Model.}
+		\begin{itemize}
+			\item{Object-Relational Mapping.}
+		\end{itemize}
+		\item{Controller.}
+		\begin{itemize}
+			\item{Front Controller.}
+		\end{itemize}
+		\item{View.}
+		\begin{itemize}
+			\item{Template View.}
+			\item{Composite View.}
+		\end{itemize}
+	\end{itemize}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Model-View-Controller}
+\subsubsection{The MVC application model}
 \begin{frame}{The MVC application model}
 	\begin{itemize}
 		\item{Models in app/models}
@@ -233,32 +269,94 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\subsection{Request/Response path}
-\begin{frame}{Request/Response path}
+\subsubsection{Request/Response path}
+\begin{frame}{Request/Response flow}
 	\includegraphics[height=200px]{diagrams_path.png}
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{\scshape Backbone.js}
-\subsection{What is Backbone.js?}
-\begin{frame}{What is Backbone.js?}
+\subsection{Model}
+\subsubsection{Object Relational Mapping}
+\begin{frame}{Object Relational Mapping}
+	\begin{itemize}
+		\item{a}
+	\end{itemize}
+\end{frame}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{View}
+\subsubsection{Template View}
+\begin{frame}{Template View}
+	\begin{itemize}
+		\item{a}
+	\end{itemize}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsubsection{Composite View}
+\begin{frame}{Composite View}
+	\begin{itemize}
+		\item{a}
+	\end{itemize}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Controller}
+\subsubsection{Front Controller}
+\begin{frame}{Front Controller Pattern}
+	\begin{itemize}
+		\item{\begin{quote}
+		"Consolidates all request handling by channeling requests through a single handler object" \cite{PEAA}
+		\end{quote}}
+	\end{itemize}
+	\includegraphics[clip=true,trim={50px 160px 100px 120px},height=90px]{frontcontroller.png}
+		\begin{itemize}
+			\item{Pros: Centralized control, Thread safety, Configurability.}
+			\item{Cons: Possible performance issues, Maintenance costs.}
+		\end{itemize}
+\end{frame}
+
+\begin{frame}{Front Controller in Play!}
+	\begin{itemize}
+		\item{The router (handler) selects a controller (command) and a particular action (execute) depeding on the HTTP request.}
+	\end{itemize}
+	\includegraphics[clip=true,trim={50px 130px 100px 65px},height=120px]{frontcontrollerplay.png}
+		\begin{itemize}
+			\item{Routes.conf file determines the location-action relationship.}
+			\item{Actions return a result that holds the HTTP Response.}
+		\end{itemize}
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{\scshape Conclusions}
+\begin{frame}
+	\begin{itemize}
+		\item{a}
+	\end{itemize}
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section*{\scshape References}
-\begin{frame}[allowframebreaks]
+\begin{frame}
 	\normalsize
 	\nocite{PlayForJava}
 	\nocite{PlayForScala}
 	\nocite{PlayFrameworkCookbook}
 	\frametitle{References}
 	\bibliographystyle{amsalpha}
-	\bibliography{biblio.bib}
+	\bibliography{biblio}
 \end{frame}
 
 \end{document}

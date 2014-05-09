@@ -7,6 +7,10 @@
 \providecommand{\href}[2]{#2}
 \begin{thebibliography}{PHC14}
 
+\bibitem[Fow02]{PEAA}
+Martin Fowler, \emph{Patterns of enterprise application architecture},
+  Addison-Wesley Professional, 2002.
+
 \bibitem[LdK14]{PlayForJava}
 Nicolas Leroux and Sietse de~Kaper, \emph{Play for java}, Manning Publications,
   2014.
