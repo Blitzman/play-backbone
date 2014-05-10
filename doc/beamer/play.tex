@@ -8,6 +8,7 @@
 
 \documentclass[xcolor=x11names,compress]{beamer}
 
+
 %% General document %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{graphicx}
 \usepackage{tikz}
@@ -17,7 +18,26 @@
 
 
 %% Beamer Layout %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\beamertemplatenavigationsymbolsempty 
 \useoutertheme[subsection=false,shadow]{miniframes}
+  \setbeamertemplate{footline}%{miniframes theme}
+  {%
+    \begin{beamercolorbox}[colsep=1.0pt]{upper separation line foot}
+    \end{beamercolorbox}
+    \begin{beamercolorbox}[ht=0.25ex,dp=1.125ex,%
+      leftskip=.3cm,rightskip=.3cm plus1fil]{author in head/foot}%
+      \leavevmode{\usebeamerfont{author in head/foot}\insertshortauthor}%
+      \hfill%
+      {\usebeamerfont{institute in head/foot}\usebeamercolor[fg]{institute in head/foot}\insertshortinstitute}%
+    \end{beamercolorbox}%
+    \begin{beamercolorbox}[ht=2.5ex,dp=1.125ex,%
+      leftskip=.3cm,rightskip=.3cm plus1fil]{title in head/foot}%
+      {\usebeamerfont{title in head/foot}\insertshorttitle} \hfill     \Large{\insertframenumber}%
+    \end{beamercolorbox}%
+    \begin{beamercolorbox}[colsep=1.0pt]{lower separation line foot}
+    \end{beamercolorbox}
+  }
+
 \useinnertheme{default}
 %\usefonttheme{serif}
 \usepackage{helvet}
@@ -78,7 +98,7 @@
 \setbeamercolor{background canvas}{bg=playGreen}
 \setbeamercolor{title}{fg=white,bg=playGreen} 
 \begin{frame}
-\title{\textbf{MVC and MVP patterns with Play! Framework and Backbone.js}}
+\title{\textbf{Presentation patterns for web applications with Play! Framework}}
 %\subtitle{SUBTITLE}
 \author{
 	Alberto García García\\
@@ -292,8 +312,28 @@
 \subsubsection{Template View}
 \begin{frame}{Template View}
 	\begin{itemize}
-		\item{a}
+		\item{\begin{quote}
+		"Renders information into HTML by embedding markers in an HTML page"\cite{PEAA}
+		\end{quote}}
 	\end{itemize}
+	\includegraphics[clip=true,trim={120px 220px 100px 65px},height=110px]{templateview.png}
+			\begin{itemize}
+				\item{Pros: Centralized control, Thread safety, Configurability.}
+				\item{Cons: Possible performance issues, Maintenance costs.}
+			\end{itemize}
+\end{frame}
+
+\begin{frame}{Template View}
+	\begin{itemize}
+		\item{\begin{quote}
+		The template with annotations is compiled to a Scala.class with a render() method with the template parameters.
+		\end{quote}}
+	\end{itemize}
+	\includegraphics[clip=true,trim={200px 350px 100px 110px},height=110px]{templateviewplay.png}
+			\begin{itemize}
+				\item{The controller calls the render method of the view.}
+				\item{The view communicates with the model (parameter).}
+			\end{itemize}
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
