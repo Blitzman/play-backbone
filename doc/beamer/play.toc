@@ -16,6 +16,6 @@
 \beamer@subsectionintoc {3}{3}{View}{19}{0}{3}
 \beamer@subsubsectionintoc {3}{3}{1}{Template View}{19}{0}{3}
 \beamer@subsubsectionintoc {3}{3}{2}{Composite View}{21}{0}{3}
-\beamer@subsectionintoc {3}{4}{Controller}{22}{0}{3}
-\beamer@subsubsectionintoc {3}{4}{1}{Front Controller}{22}{0}{3}
-\beamer@sectionintoc {4}{\scshape Conclusions}{24}{0}{4}
+\beamer@subsectionintoc {3}{4}{Controller}{24}{0}{3}
+\beamer@subsubsectionintoc {3}{4}{1}{Front Controller}{24}{0}{3}
+\beamer@sectionintoc {4}{\scshape Conclusions}{26}{0}{4}

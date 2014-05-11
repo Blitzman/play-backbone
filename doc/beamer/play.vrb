@@ -1,0 +1,21 @@
+\frametitle {Composite View}\begin {itemize}
+\item{\begin{quote}
+A composite view: compositeView.scala.html
+\end{quote}}
+\end{itemize}
+\lstset{language=HTML}
+\begin{lstlisting}
+@(someModel: Model)(simpleView: Html)
+<html>
+    <head>
+        <title>Composite View Example</title>
+    </head>
+    <body>
+        @simpleView
+
+        <section id="main">
+         @someModel.showSomething()
+        </section>
+    </body>
+</html>
+\end{lstlisting}

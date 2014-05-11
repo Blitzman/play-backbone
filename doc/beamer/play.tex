@@ -13,6 +13,7 @@
 \usepackage{graphicx}
 \usepackage{tikz}
 \usepackage[latin1]{inputenc}  
+\usepackage{listings}
 \usetikzlibrary{decorations.fractals}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -58,6 +59,30 @@
 \setbeamercolor*{palette tertiary}{fg=black,bg=black!10} 
 \setbeamercolor*{palette quaternary}{fg=black,bg=black!10} 
 
+\lstset{ %
+  backgroundcolor=\color{white},   % choose the background color; you must add \usepackage{color} or \usepackage{xcolor}
+  basicstyle=\footnotesize,        % the size of the fonts that are used for the code
+  breakatwhitespace=false,         % sets if automatic breaks should only happen at whitespace
+  breaklines=true,                 % sets automatic line breaking
+  captionpos=b,                    % sets the caption-position to bottom
+  deletekeywords={...},            % if you want to delete keywords from the given language
+  escapeinside={\%*}{*)},          % if you want to add LaTeX within your code
+  extendedchars=true,              % lets you use non-ASCII characters; for 8-bits encodings only, does not work with UTF-8
+  frame=single,                    % adds a frame around the code
+  keepspaces=true,                 % keeps spaces in text, useful for keeping indentation of code (possibly needs columns=flexible)
+  keywordstyle=\color{blue},       % keyword style
+  language=Octave,                 % the language of the code
+  morekeywords={*,...},            % if you want to add more keywords to the set
+  numbers=left,                    % where to put the line-numbers; possible values are (none, left, right)
+  numbersep=5pt,                   % how far the line-numbers are from the code
+  rulecolor=\color{black},         % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. comments (green here))
+  showspaces=false,                % show spaces everywhere adding particular underscores; it overrides 'showstringspaces'
+  showstringspaces=false,          % underline spaces within strings only
+  showtabs=false,                  % show tabs within strings adding particular underscores
+  stepnumber=2,                    % the step between two line-numbers. If it's 1, each line will be numbered
+  tabsize=2,                       % sets default tabsize to 2 spaces
+  title=\lstname                   % show the filename of files included with \lstinputlisting; also try caption instead of title
+}
 
 \renewcommand{\(}{\begin{columns}}
 \renewcommand{\)}{\end{columns}}
@@ -318,8 +343,8 @@
 	\end{itemize}
 	\includegraphics[clip=true,trim={120px 220px 100px 65px},height=110px]{templateview.png}
 			\begin{itemize}
-				\item{Pros: Centralized control, Thread safety, Configurability.}
-				\item{Cons: Possible performance issues, Maintenance costs.}
+				\item{Pros: Lot of power and flexibility in presentation.}
+				\item{Cons: Messy code, difficult to maintain, need helpers.}
 			\end{itemize}
 \end{frame}
 
@@ -342,9 +367,63 @@
 \subsubsection{Composite View}
 \begin{frame}{Composite View}
 	\begin{itemize}
-		\item{a}
+		\item{\begin{quote}
+		A view is built from other views that combine into a composite whole, managing the content and the layout independently.
+		\end{quote}}
 	\end{itemize}
+	\centering
+	\includegraphics[clip=true,trim={120px 180px 100px 120px},height=110px]{compositeview.png}
+			\begin{itemize}
+				\item{Pros: Modularity, reuse.}
+				\item{Cons: Performance, maintainability.}
+			\end{itemize}
 \end{frame}
+
+\begin{frame}[fragile]{Composite View}
+	\begin{itemize}
+		\item{\begin{quote}
+		A sample simple view: simpleview.scala.html
+		\end{quote}}
+		\end{itemize}
+		\lstset{language=HTML}
+		\begin{lstlisting}
+		@(someModel: Model)
+		
+		@compositeView(someModel) {
+		  <header>
+		    <hgroup>
+		      <h1>Model data</h1>
+		      <h2>@someModel.doSomething()</h2>
+		    </hgroup>
+		  </header>
+		}
+		\end{lstlisting}
+\end{frame}
+
+\begin{frame}[fragile]{Composite View}
+	\begin{itemize}
+		\item{\begin{quote}
+		A composite view: compositeView.scala.html
+		\end{quote}}
+		\end{itemize}
+		\lstset{language=HTML}
+		\begin{lstlisting}
+@(someModel: Model)(simpleView: Html)
+<html>
+    <head>
+        <title>Composite View Example</title>
+    </head>
+    <body>
+        @simpleView
+        
+        <section id="main">
+        	@someModel.showSomething()
+        </section>
+    </body>
+</html>
+		\end{lstlisting}
+\end{frame}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
