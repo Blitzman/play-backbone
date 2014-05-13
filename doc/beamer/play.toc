@@ -8,14 +8,14 @@
 \beamer@subsectionintoc {2}{2}{RESTful Architecture}{11}{0}{2}
 \beamer@subsectionintoc {2}{3}{Project layout}{12}{0}{2}
 \beamer@sectionintoc {3}{\scshape Patterns in Play!}{13}{0}{3}
-\beamer@subsectionintoc {3}{1}{Model-View-Controller}{16}{0}{3}
-\beamer@subsubsectionintoc {3}{1}{1}{The MVC application model}{16}{0}{3}
-\beamer@subsubsectionintoc {3}{1}{2}{Request/Response path}{17}{0}{3}
-\beamer@subsectionintoc {3}{2}{Model}{18}{0}{3}
-\beamer@subsubsectionintoc {3}{2}{1}{Object Relational Mapping}{18}{0}{3}
-\beamer@subsectionintoc {3}{3}{View}{19}{0}{3}
-\beamer@subsubsectionintoc {3}{3}{1}{Template View}{19}{0}{3}
-\beamer@subsubsectionintoc {3}{3}{2}{Composite View}{21}{0}{3}
-\beamer@subsectionintoc {3}{4}{Controller}{24}{0}{3}
-\beamer@subsubsectionintoc {3}{4}{1}{Front Controller}{24}{0}{3}
-\beamer@sectionintoc {4}{\scshape Conclusions}{26}{0}{4}
+\beamer@subsectionintoc {3}{1}{Model-View-Controller}{15}{0}{3}
+\beamer@subsubsectionintoc {3}{1}{1}{The MVC application model: Models}{15}{0}{3}
+\beamer@subsubsectionintoc {3}{1}{2}{Request/Response path}{21}{0}{3}
+\beamer@subsectionintoc {3}{2}{Model}{27}{0}{3}
+\beamer@subsubsectionintoc {3}{2}{1}{Object Relational Mapping}{27}{0}{3}
+\beamer@subsectionintoc {3}{3}{View}{28}{0}{3}
+\beamer@subsubsectionintoc {3}{3}{1}{Template View}{28}{0}{3}
+\beamer@subsubsectionintoc {3}{3}{2}{Composite View}{30}{0}{3}
+\beamer@subsectionintoc {3}{4}{Controller}{33}{0}{3}
+\beamer@subsubsectionintoc {3}{4}{1}{Front Controller}{33}{0}{3}
+\beamer@sectionintoc {4}{\scshape Conclusions}{35}{0}{4}
