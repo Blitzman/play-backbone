@@ -2,52 +2,52 @@ This is BibTeX, Version 0.99d (TeX Live 2012/Debian)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: play.aux
 The style file: amsalpha.bst
-Database file #1: biblio.bib.bib
+Database file #1: biblio.bib
 Name 1 in "Peter Hilton, Erik Bakker, and Francisco Canedo" has a comma at the end for entry PlayForScala
 while executing---line 1286 of file amsalpha.bst
 Name 1 in "Peter Hilton, Erik Bakker, and Francisco Canedo" has a comma at the end for entry PlayForScala
 while executing---line 1286 of file amsalpha.bst
 Name 1 in "Peter Hilton, Erik Bakker, and Francisco Canedo" has a comma at the end for entry PlayForScala
 while executing---line 1382 of file amsalpha.bst
-You've used 4 entries,
+You've used 5 entries,
             2624 wiz_defined-function locations,
-            578 strings with 4740 characters,
-and the built_in function-call counts, 1210 in all, are:
-= -- 88
-> -- 54
-< -- 2
-+ -- 16
-- -- 16
-* -- 78
-:= -- 210
-add.period$ -- 4
-call.type$ -- 4
-change.case$ -- 22
-chr.to.int$ -- 4
-cite$ -- 4
-duplicate$ -- 62
-empty$ -- 109
-format.name$ -- 22
-if$ -- 240
+            584 strings with 4818 characters,
+and the built_in function-call counts, 1481 in all, are:
+= -- 111
+> -- 62
+< -- 3
++ -- 18
+- -- 18
+* -- 95
+:= -- 250
+add.period$ -- 5
+call.type$ -- 5
+change.case$ -- 27
+chr.to.int$ -- 5
+cite$ -- 5
+duplicate$ -- 77
+empty$ -- 136
+format.name$ -- 26
+if$ -- 297
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 12
-newline$ -- 22
-num.names$ -- 12
-pop$ -- 36
+missing$ -- 13
+newline$ -- 25
+num.names$ -- 15
+pop$ -- 47
 preamble$ -- 1
-purify$ -- 26
+purify$ -- 32
 quote$ -- 0
-skip$ -- 48
+skip$ -- 59
 stack$ -- 0
-substring$ -- 28
-swap$ -- 4
-text.length$ -- 2
-text.prefix$ -- 2
+substring$ -- 35
+swap$ -- 5
+text.length$ -- 3
+text.prefix$ -- 3
 top$ -- 0
-type$ -- 16
+type$ -- 24
 warning$ -- 0
-while$ -- 10
-width$ -- 6
-write$ -- 49
+while$ -- 12
+width$ -- 7
+write$ -- 59
 (There were 3 error messages)

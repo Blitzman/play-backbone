@@ -13,9 +13,9 @@
 \beamer@subsubsectionintoc {3}{1}{2}{Request/Response path}{21}{0}{3}
 \beamer@subsectionintoc {3}{2}{Model}{27}{0}{3}
 \beamer@subsubsectionintoc {3}{2}{1}{Object Relational Mapping}{27}{0}{3}
-\beamer@subsectionintoc {3}{3}{View}{28}{0}{3}
-\beamer@subsubsectionintoc {3}{3}{1}{Template View}{28}{0}{3}
-\beamer@subsubsectionintoc {3}{3}{2}{Composite View}{30}{0}{3}
-\beamer@subsectionintoc {3}{4}{Controller}{33}{0}{3}
-\beamer@subsubsectionintoc {3}{4}{1}{Front Controller}{33}{0}{3}
-\beamer@sectionintoc {4}{\scshape Conclusions}{35}{0}{4}
+\beamer@subsectionintoc {3}{3}{View}{31}{0}{3}
+\beamer@subsubsectionintoc {3}{3}{1}{Template View}{31}{0}{3}
+\beamer@subsubsectionintoc {3}{3}{2}{Composite View}{33}{0}{3}
+\beamer@subsectionintoc {3}{4}{Controller}{36}{0}{3}
+\beamer@subsubsectionintoc {3}{4}{1}{Front Controller}{36}{0}{3}
+\beamer@sectionintoc {4}{\scshape Conclusions}{38}{0}{4}

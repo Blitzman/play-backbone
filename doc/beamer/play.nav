@@ -73,41 +73,47 @@
 \headcommand {\beamer@subsubsectionentry {0}{3}{2}{1}{27}{Object Relational Mapping}}
 \headcommand {\slideentry {3}{2}{1}{27/27}{Model}{0}}
 \headcommand {\beamer@framepages {27}{27}}
-\headcommand {\beamer@subsectionentry {0}{3}{3}{28}{View}}\headcommand {\beamer@subsectionpages {27}{27}}
-\headcommand {\beamer@subsubsectionentry {0}{3}{3}{1}{28}{Template View}}
-\headcommand {\slideentry {3}{3}{1}{28/28}{View}{0}}
+\headcommand {\slideentry {3}{2}{2}{28/28}{Model}{0}}
 \headcommand {\beamer@framepages {28}{28}}
-\headcommand {\slideentry {3}{3}{2}{29/29}{View}{0}}
+\headcommand {\slideentry {3}{2}{3}{29/29}{Model}{0}}
 \headcommand {\beamer@framepages {29}{29}}
-\headcommand {\beamer@subsubsectionentry {0}{3}{3}{2}{30}{Composite View}}
-\headcommand {\slideentry {3}{3}{3}{30/30}{View}{0}}
+\headcommand {\slideentry {3}{2}{4}{30/30}{Model}{0}}
 \headcommand {\beamer@framepages {30}{30}}
-\headcommand {\slideentry {3}{3}{4}{31/31}{View}{0}}
+\headcommand {\beamer@subsectionentry {0}{3}{3}{31}{View}}\headcommand {\beamer@subsectionpages {27}{30}}
+\headcommand {\beamer@subsubsectionentry {0}{3}{3}{1}{31}{Template View}}
+\headcommand {\slideentry {3}{3}{1}{31/31}{View}{0}}
 \headcommand {\beamer@framepages {31}{31}}
-\headcommand {\slideentry {3}{3}{5}{32/32}{View}{0}}
+\headcommand {\slideentry {3}{3}{2}{32/32}{View}{0}}
 \headcommand {\beamer@framepages {32}{32}}
-\headcommand {\beamer@subsectionentry {0}{3}{4}{33}{Controller}}\headcommand {\beamer@subsectionpages {28}{32}}
-\headcommand {\beamer@subsubsectionentry {0}{3}{4}{1}{33}{Front Controller}}
-\headcommand {\slideentry {3}{4}{1}{33/33}{Controller}{0}}
+\headcommand {\beamer@subsubsectionentry {0}{3}{3}{2}{33}{Composite View}}
+\headcommand {\slideentry {3}{3}{3}{33/33}{View}{0}}
 \headcommand {\beamer@framepages {33}{33}}
-\headcommand {\slideentry {3}{4}{2}{34/34}{Controller}{0}}
+\headcommand {\slideentry {3}{3}{4}{34/34}{View}{0}}
 \headcommand {\beamer@framepages {34}{34}}
-\headcommand {\sectionentry {4}{\scshape Conclusions}{35}{\scshape Conclusions}{0}}
-\headcommand {\beamer@sectionpages {13}{34}}
-\headcommand {\beamer@subsectionpages {33}{34}}
-\headcommand {\slideentry {4}{0}{3}{35/35}{}{0}}
+\headcommand {\slideentry {3}{3}{5}{35/35}{View}{0}}
 \headcommand {\beamer@framepages {35}{35}}
-\headcommand {\slideentry {4}{0}{4}{36/36}{}{0}}
+\headcommand {\beamer@subsectionentry {0}{3}{4}{36}{Controller}}\headcommand {\beamer@subsectionpages {31}{35}}
+\headcommand {\beamer@subsubsectionentry {0}{3}{4}{1}{36}{Front Controller}}
+\headcommand {\slideentry {3}{4}{1}{36/36}{Controller}{0}}
 \headcommand {\beamer@framepages {36}{36}}
-\headcommand {\slideentry {4}{0}{5}{37/37}{}{0}}
+\headcommand {\slideentry {3}{4}{2}{37/37}{Controller}{0}}
 \headcommand {\beamer@framepages {37}{37}}
-\headcommand {\sectionentry {5}{\scshape References}{38}{\scshape References}{0}}
-\headcommand {\beamer@sectionpages {35}{37}}
-\headcommand {\beamer@subsectionpages {35}{37}}
-\headcommand {\slideentry {5}{0}{6}{38/38}{}{0}}
+\headcommand {\sectionentry {4}{\scshape Conclusions}{38}{\scshape Conclusions}{0}}
+\headcommand {\beamer@sectionpages {13}{37}}
+\headcommand {\beamer@subsectionpages {36}{37}}
+\headcommand {\slideentry {4}{0}{3}{38/38}{}{0}}
 \headcommand {\beamer@framepages {38}{38}}
-\headcommand {\beamer@partpages {1}{38}}
-\headcommand {\beamer@subsectionpages {38}{38}}
-\headcommand {\beamer@sectionpages {38}{38}}
-\headcommand {\beamer@documentpages {38}}
-\headcommand {\def \inserttotalframenumber {38}}
+\headcommand {\slideentry {4}{0}{4}{39/39}{}{0}}
+\headcommand {\beamer@framepages {39}{39}}
+\headcommand {\slideentry {4}{0}{5}{40/40}{}{0}}
+\headcommand {\beamer@framepages {40}{40}}
+\headcommand {\sectionentry {5}{\scshape References}{41}{\scshape References}{0}}
+\headcommand {\beamer@sectionpages {38}{40}}
+\headcommand {\beamer@subsectionpages {38}{40}}
+\headcommand {\slideentry {5}{0}{6}{41/41}{}{0}}
+\headcommand {\beamer@framepages {41}{41}}
+\headcommand {\beamer@partpages {1}{41}}
+\headcommand {\beamer@subsectionpages {41}{41}}
+\headcommand {\beamer@sectionpages {41}{41}}
+\headcommand {\beamer@documentpages {41}}
+\headcommand {\def \inserttotalframenumber {41}}

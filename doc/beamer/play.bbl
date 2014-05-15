@@ -11,6 +11,10 @@
 Martin Fowler, \emph{Patterns of enterprise application architecture},
   Addison-Wesley Professional, 2002.
 
+\bibitem[Fow12]{ORMHate}
+Martin Fowler, \emph{Orm hate}, http://martinfowler.com/bliki/OrmHate.html, May
+  2012.
+
 \bibitem[LdK14]{PlayForJava}
 Nicolas Leroux and Sietse de~Kaper, \emph{Play for java}, Manning Publications,
   2014.

@@ -498,8 +498,86 @@ public class Application extends Controller
 \subsubsection{Object Relational Mapping}
 \begin{frame}{Object Relational Mapping}
 	\begin{itemize}
-		\item{a}
+		\item{Need for persistence (objects outlive the application).}
+		\item{Persistence by means of a database.}
+		\begin{itemize}
+			\item{\textbf{Relational} (RDBMS)}
+			\item{Object (ODBMS)}
+		\end{itemize}
+		\item{Gap between domain model and the relational database.}
+		\item{The Object-Relational impedance mismatch.}
+		\begin{itemize}
+			\item{Granularity}
+			\item{Inheritance}
+			\item{Identity}
+			\item{Associations}
+			\item{Data navigation}
+		\end{itemize}
+		\item{Logical representation to atomized one to store in a DB.}
+		\end{itemize}
+\end{frame}
+
+\begin{frame}{Object Relational Mapping tools}
+	\begin{itemize}
+		\item{Object Relational Mapping tools are a possible solution.}
+		\item{Provide simple ways to determine the mapping.}
+		\begin{itemize}
+			\item{XML configuration files.}
+			\item{Annotations in the classes.}
+		\end{itemize}
+		\item{Provide data query and retrieval facilities.}
+		\item{All that glitters is not gold...}
+		\begin{itemize}
+			\item{Pros: Simplicity, dramatically decrease the amount of code.}
+			\item{Cons: Higher abstraction drawbacks...}
+			\begin{itemize}
+				\item{Performance issues.}
+				\item{Poor database design.}
+			\end{itemize}
+		\end{itemize}
+		\item{Play! uses Ebean as its ORM of choice.}
 	\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]{ORM: Annotated Java model}
+\lstset{language=Java}
+	\begin{lstlisting}
+	package models;
+	 
+	@Entity
+	public class Post extends Model {
+	 
+	 	@Id
+	 	public Long id;
+	 	
+	 	@Constraints.Required
+	    public String title;
+	    
+	    @Formats.DateTime(pattern="dd/MM/yyyy")
+	    public Date postedAt;
+	    
+	    public String content;
+	    
+	    @ManyToOne
+	    public User author;
+	    
+	    @OneToMany(mappedBy="post", cascade=CascadeType.ALL)
+	    public List<Comment> comments;
+	}
+	\end{lstlisting}
+\end{frame}
+
+\begin{frame}[fragile]{ORM: Usage}
+\begin{lstlisting}
+		User user = new User("test@test.com", "Test", "test");
+		user.save();
+		
+		User user = User.find.where().eq("email", "test@test.com").findUnique();
+		
+		User.find.ref("test@test.com").delete();
+\end{lstlisting}
+
+ORM Hate by Martin Fowler \cite{ORMHate}
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
