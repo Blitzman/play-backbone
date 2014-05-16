@@ -1,21 +1,19 @@
-\frametitle {Composite View}\begin {itemize}
-\item{\begin{quote}
-A composite view: compositeView.scala.html
-\end{quote}}
+\frametitle {The Router}\begin {itemize}
+\item{The conf/routes file is compiled to a Router class.}
 \end{itemize}
-\lstset{language=HTML}
+\lstset{language=Java}
 \begin{lstlisting}
-@(someModel: Model)(simpleView: Html)
-<html>
-    <head>
-        <title>Composite View Example</title>
-    </head>
-    <body>
-        @simpleView
+# Routes
+# All application routes (Higher priority routes first)
+# ~~~~
+# Home page
+GET     /         controllers.Application.index()
 
-        <section id="main">
-         @someModel.showSomething()
-        </section>
-    </body>
-</html>
+# Login
+GET     /login    controllers.Application.login()
+POST    /login    controllers.Application.authenticate()
+
+#Logout
+GET     /logout   controllers.Application.logout()
+
 \end{lstlisting}

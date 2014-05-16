@@ -704,13 +704,58 @@ ORM Hate by Martin Fowler \cite{ORMHate}
 		\end{itemize}
 \end{frame}
 
+\begin{frame}[fragile]{The Router}
+	\begin{itemize}
+		\item{The conf/routes file is compiled to a Router class.}
+	\end{itemize}
+	\lstset{language=Java}
+	\begin{lstlisting}
+# Routes
+# All application routes (Higher priority routes first)
+# ~~~~
+# Home page
+GET     /         controllers.Application.index()
+
+# Login
+GET     /login    controllers.Application.login()
+POST    /login    controllers.Application.authenticate()
+
+#Logout
+GET     /logout   controllers.Application.logout()
+
+	\end{lstlisting}
+\end{frame}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{\scshape Conclusions}
 \begin{frame}
 	\begin{itemize}
-		\item{a}
+		\item{Web programming is evolving (again).}
+		\begin{itemize}
+			\item{Scalability.}
+			\item{Client-side.}
+			\item{Frameworks to deal with complexity.}
+		\end{itemize}
+		\item{Patterns are not just theoretical models.}
+		\begin{itemize}
+			\item{Applied in modern applications.}
+			\item{Guides, not fixed templates.}
+			\item{With great power, comes great responsibility.}
+		\end{itemize}
+		\item{Play! applies patterns for modern applications.}
+		\begin{itemize}
+			\item{Easy learning curve.}
+			\item{Deep enough for complex applications.}
+			\item{Supported by Typesafe (Scala creators).}
+			\item{Not perfect.}
+			\begin{itemize}
+				\item{Difficult upgrades.}
+				\item{Documentation is not so great.}
+				\item{Not the most popular.}
+			\end{itemize}
+		\end{itemize}
 	\end{itemize}
 \end{frame}
 
