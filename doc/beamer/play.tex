@@ -611,6 +611,34 @@ ORM Hate by Martin Fowler \cite{ORMHate}
 			\end{itemize}
 \end{frame}
 
+\begin{frame}[fragile]{Template View example}
+	\lstset{language=HTML}
+	\begin{lstlisting}
+@(title: String, users: List[User])
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Play! Hello world</title>
+    </head>
+    <body>
+      <header>
+	        <h1>@title</h1>
+      </header>
+      
+      <section>
+        <ul>
+          @for(u <- users) {
+            <li>@u.name</li>
+          } 
+        </ul>
+      </section>
+    </body>
+</html>
+	\end{lstlisting}
+\end{frame}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 

@@ -15,7 +15,7 @@
 \beamer@subsubsectionintoc {3}{2}{1}{Object Relational Mapping}{27}{0}{3}
 \beamer@subsectionintoc {3}{3}{View}{31}{0}{3}
 \beamer@subsubsectionintoc {3}{3}{1}{Template View}{31}{0}{3}
-\beamer@subsubsectionintoc {3}{3}{2}{Composite View}{33}{0}{3}
-\beamer@subsectionintoc {3}{4}{Controller}{36}{0}{3}
-\beamer@subsubsectionintoc {3}{4}{1}{Front Controller}{36}{0}{3}
-\beamer@sectionintoc {4}{\scshape Conclusions}{39}{0}{4}
+\beamer@subsubsectionintoc {3}{3}{2}{Composite View}{34}{0}{3}
+\beamer@subsectionintoc {3}{4}{Controller}{37}{0}{3}
+\beamer@subsubsectionintoc {3}{4}{1}{Front Controller}{37}{0}{3}
+\beamer@sectionintoc {4}{\scshape Conclusions}{40}{0}{4}

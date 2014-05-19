@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2014.2.18)  16 MAY 2014 19:53
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2014.2.18)  19 MAY 2014 02:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -974,7 +974,7 @@ LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <8> not available
 LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <6> not available
 (Font)              Font shape `OT1/phv/m/sl' tried instead on input line 139.
 
-<play.png, id=103, 882.29625pt x 301.125pt>
+<play.png, id=104, 882.29625pt x 301.125pt>
 File: play.png Graphic file (type png)
  <use play.png>
 Package pdftex.def Info: play.png used on input line 139.
@@ -1006,7 +1006,7 @@ LaTeX Font Info:    Font shape `OT1/phv/m/it' in size <5> not available
 ] [11
 
 ]
-<layout.png, id=611, 652.4375pt x 439.6425pt>
+<layout.png, id=625, 652.4375pt x 439.6425pt>
 File: layout.png Graphic file (type png)
  <use layout.png>
 Package pdftex.def Info: layout.png used on input line 260.
@@ -1070,7 +1070,7 @@ Overfull \vbox (25.42377pt too high) detected at line 347
 
  (./play.vrb) [20
 
-] <playarch.png, id=994, 586.19pt x 575.14874pt>
+] <playarch.png, id=1016, 586.19pt x 575.14874pt>
 File: playarch.png Graphic file (type png)
 
 <use playarch.png>
@@ -1116,7 +1116,7 @@ Overfull \vbox (25.42377pt too high) detected at line 484
 ]
 \openout4 = `play.vrb'.
 
- (./play.vrb <result.png, id=1199, 502.87875pt x 227.85126pt>
+ (./play.vrb <result.png, id=1226, 502.87875pt x 227.85126pt>
 File: result.png Graphic file (type png)
 
 <use result.png>
@@ -1150,7 +1150,7 @@ Overfull \vbox (25.42377pt too high) detected at line 568
 
  (./play.vrb) [30
 
-] <templateview.png, id=1406, 901.3675pt x 505.89pt>
+] <templateview.png, id=1439, 901.3675pt x 505.89pt>
 File: templateview.png Graphic file (type png)
 
 <use templateview.png>
@@ -1164,7 +1164,7 @@ Overfull \hbox (34.54816pt too wide) in paragraph at lines 599--599
 [31
 
  <./templateview.png>]
-<templateviewplay.png, id=1454, 1036.87375pt x 674.52pt>
+<templateviewplay.png, id=1487, 1036.87375pt x 674.52pt>
 File: templateviewplay.png Graphic file (type png)
 
 <use templateviewplay.png>
@@ -1178,55 +1178,63 @@ Overfull \hbox (74.47034pt too wide) in paragraph at lines 612--612
 [32
 
  <./templateviewplay.png>]
-<compositeview.png, id=1498, 622.325pt x 533.995pt>
-File: compositeview.png Graphic file (type png)
- <use compositeview.png>
-Package pdftex.def Info: compositeview.png used on input line 630.
-(pdftex.def)             Requested size: 190.3649pt x 110.4129pt.
+\openout4 = `play.vrb'.
+
+ (./play.vrb)
+Overfull \vbox (25.42377pt too high) detected at line 640
+ []
 
 [33
 
+] <compositeview.png, id=1574, 622.325pt x 533.995pt>
+File: compositeview.png Graphic file (type png)
+
+<use compositeview.png>
+Package pdftex.def Info: compositeview.png used on input line 658.
+(pdftex.def)             Requested size: 190.3649pt x 110.4129pt.
+ [34
+
  <./compositeview.png>]
-\openout4 = `play.vrb'.
-
- (./play.vrb) [34
-
-]
 \openout4 = `play.vrb'.
 
  (./play.vrb) [35
 
 ]
-<frontcontroller.png, id=1625, 727.71875pt x 459.7175pt>
+\openout4 = `play.vrb'.
+
+
+(./play.vrb) [36
+
+] <frontcontroller.png, id=1704, 727.71875pt x 459.7175pt>
 File: frontcontroller.png Graphic file (type png)
 
 <use frontcontroller.png>
-Package pdftex.def Info: frontcontroller.png used on input line 694.
+Package pdftex.def Info: frontcontroller.png used on input line 722.
 (pdftex.def)             Requested size: 291.818pt x 90.33783pt.
- [36
+ [37
 
  <./frontcontroller.png>]
-<frontcontrollerplay.png, id=1671, 812.03375pt x 465.74pt>
+<frontcontrollerplay.png, id=1751, 812.03375pt x 465.74pt>
 File: frontcontrollerplay.png Graphic file (type png)
 
 <use frontcontrollerplay.png>
-Package pdftex.def Info: frontcontrollerplay.png used on input line 705.
+Package pdftex.def Info: frontcontrollerplay.png used on input line 733.
 (pdftex.def)             Requested size: 295.0853pt x 120.45044pt.
- [37
+ [38
 
  <./frontcontrollerplay.png>]
 \openout4 = `play.vrb'.
 
  (./play.vrb)
-[38
+[39
 
-] [39
+] [40
 
-] (./play.toc) [40
+] (./play.toc) [41
 
-] [41
+] [42
 
-] (./play.bbl) [42
+] (./play.bbl) [43
 
  </usr/share/texmf/tex/latex/beamer/base/art/beamericonarticle.pdf>]
 \tf@nav=\write6
@@ -1238,20 +1246,20 @@ Package pdftex.def Info: frontcontrollerplay.png used on input line 705.
 \tf@snm=\write8
 \openout8 = `play.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 776.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 776.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 804.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 804.
  (./play.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 776.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 776.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 804.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 804.
 Package rerunfilecheck Info: File `play.out' has not changed.
-(rerunfilecheck)             Checksum: 3513EBF240DAE76CDE015CF05D1140A4;836.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 776.
+(rerunfilecheck)             Checksum: 9489E6B647D0DFECC7BE6A286AC0EDBE;836.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 804.
  ) 
 Here is how much of TeX's memory you used:
- 21497 strings out of 494997
- 393787 string characters out of 3180092
- 734121 words of memory out of 3000000
- 24052 multiletter control sequences out of 15000+200000
+ 21503 strings out of 494997
+ 393842 string characters out of 3180092
+ 735469 words of memory out of 3000000
+ 24054 multiletter control sequences out of 15000+200000
  35544 words of font info for 68 fonts, out of 3000000 for 9000
  40 hyphenation exceptions out of 8191
  49i,19n,58p,393b,1697s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1264,10 +1272,10 @@ pe1/public/amsfonts/symbols/msam7.pfb></usr/share/texlive/texmf-dist/fonts/type
 1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvet
 ic/uhvr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.p
 fb>
-Output written on play.pdf (42 pages, 344869 bytes).
+Output written on play.pdf (43 pages, 349843 bytes).
 PDF statistics:
- 1990 PDF objects out of 2073 (max. 8388607)
- 1856 compressed objects within 19 object streams
- 111 named destinations out of 1000 (max. 500000)
+ 2077 PDF objects out of 2487 (max. 8388607)
+ 1940 compressed objects within 20 object streams
+ 113 named destinations out of 1000 (max. 500000)
  220 words of extra memory for PDF output out of 10000 (max. 10000000)
 
