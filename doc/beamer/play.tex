@@ -422,7 +422,7 @@ public class Application extends Controller
 {
     public static Result index() 
     {
-        return ok("Hello, world!", index.render(User.all());
+        return ok(index.render("Hello, world!", User.all());
     }
 }
 	\end{lstlisting}
