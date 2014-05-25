@@ -1,11 +1,9 @@
+import play.Project._
+
 name := "play-backbone"
 
-version := "1.0-SNAPSHOT"
+version := "1.0"
 
-libraryDependencies ++= Seq(
-  javaJdbc,
-  javaEbean,
-  cache
-)     
+libraryDependencies ++= Seq(javaJdbc, javaEbean)     
 
-play.Project.playJavaSettings
+playJavaSettings

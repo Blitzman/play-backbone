@@ -2,6 +2,7 @@ package models;
 
 import java.util.*;
 import javax.persistence.*;
+import com.avaje.ebean.*;
 import play.db.ebean.*;
 
 @Entity
@@ -43,9 +44,39 @@ public class Project extends Model
 	{
 		return find.where().eq("members.email", user).eq("id", project).findRowCount() > 0;
 	}
+
+	public static void addMember(Long project, String user) 
+    {
+        Project p = Project.find.setId(project).fetch("members", "email").findUnique();
+        p.members.add(User.find.ref(user));
+        p.saveManyToManyAssociations("members");
+    }
+
+    public static void removeMember(Long project, String user) 
+    {
+        Project p = Project.find.setId(project).fetch("members", "email").findUnique();
+        p.members.remove(User.find.ref(user));
+        p.saveManyToManyAssociations("members");
+    }
 	
 	public static List<Project> findInvolving (String user)
 	{
 		return find.where().eq("members.email", user).findList();
 	}
+
+    public static void deleteInFolder(String folder) 
+    {
+        Ebean.createSqlUpdate("delete from project where folder = :folder").setParameter("folder", folder).execute();
+   	}
+
+    public static String renameFolder(String folder, String newName) 
+    {
+        Ebean.createSqlUpdate("update project set folder = :newName where folder = :folder").setParameter("folder", folder).setParameter("newName", newName).execute();
+        return newName;
+    }
+
+    public String toString() 
+    {
+        return "Project(" + id + ") with " + (members == null ? "null" : members.size()) + " members";
+    }
 }

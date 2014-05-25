@@ -1,103 +1,195 @@
+
 # Users
 
-- &bob !!models.User
-    email:      bob@example.com
-    name:       Bob
-    pass:   secret
+users:
 
-- &jane !!models.User
-    email:      jane@example.com
-    name:       Jane
-    pass:   secret
-
-- &jeff !!models.User
-    email:      jeff@example.com
-    name:       Jeff
-    pass:   secret
+    - !!models.User
+        email:      carlos@dss.com
+        name:       Carlos
+        password:   patterns
+    
+    - !!models.User
+        email:      agg180@alu.ua.es
+        name:       Albert
+        password:   secret
+    
+    - !!models.User
+        email:      test@dss.com
+        name:       Test
+        password:   secret
+    
+    - !!models.User
+        email:      isaac@asimov.com
+        name:       Asimov
+        password:   secret
     
 # Projects
 
-- &play2 !!models.Project
-    name:       Play 2.0
-    folder:     Play framework
-    members:
-        - *bob
-        - *jane
-        - *jeff
+projects:
 
-- &play1 !!models.Project
-    name:       Play 1.2.4
-    folder:     Play framework
-    members:
-        - *bob
-        - *jane
+    - !!models.Project
+        id:         1
+        name:       Play 2.0   
+        folder:     Play framework
+        members:
+            - !!models.User
+                email: carlos@dss.com
+            - !!models.User
+                email: agg180@alu.ua.es
+            - !!models.User
+                email: test@dss.com
+            - !!models.User
+                email: isaac@asimov.com
 
-- &website !!models.Project
-    name:       Website
-    folder:     Play framework
-    members:
-        - *bob
-        - *jeff
+    - !!models.Project
+        id:         2
+        name:       Play 1.2.4
+        folder:     Play framework
+        members:
+            - !!models.User
+                email: carlos@dss.com
+            - !!models.User
+                email: isaac@asimov.com
+                
+    - !!models.Project
+        id:         3
+        name:       Website 
+        folder:     Play framework
+        members:
+            - !!models.User
+                email: carlos@dss.com
+            - !!models.User
+                email: agg180@alu.ua.es
 
-- &todo !!models.Project
-    name:       Things to do
-    folder:     Personal
-    members:
-        - *bob
+    - !!models.Project
+        id:         4
+        name:       Secret project 
+        folder:     Zenexity
+        members:
+            - !!models.User
+                email: carlos@dss.com
+            - !!models.User
+                email: agg180@alu.ua.es
+            - !!models.User
+                email: test@dss.com
+            - !!models.User
+                email: isaac@asimov.com
+                
+    - !!models.Project
+        id:         5
+        name:       Playmate
+        folder:     Zenexity
+        members:
+            - !!models.User
+                email: agg180@alu.ua.es
+            
+    - !!models.Project
+        id:         6
+        name:       Things to do
+        folder:     Personal
+        members:
+            - !!models.User
+                email: carlos@dss.com
 
-- &privatebob !!models.Project
-    name:       Private
-    folder:     Personal
-    members:
-        - *bob
+    - !!models.Project
+        id:         7
+        name:       Play samples
+        folder:     Zenexity
+        members:
+            - !!models.User
+                email: carlos@dss.com
+            - !!models.User
+                email: agg180@alu.ua.es
+                
+    - !!models.Project
+        id:         8
+        name:       Private
+        folder:     Personal
+        members:
+            - !!models.User
+                email: carlos@dss.com
 
-- &privatejane !!models.Project
-    name:       Private
-    folder:     Personal
-    members:
-        - *jane
-
-- &privatejeff !!models.Project
-    name:       Private
-    folder:     Personal
-    members:
-        - *jeff
+    - !!models.Project
+        id:         9
+        name:       Private
+        folder:     Personal
+        members:
+            - !!models.User
+                email: isaac@asimov.com
+                
+    - !!models.Project
+        id:         10
+        name:       Private
+        folder:     Personal
+        members:
+            - !!models.User
+                email: test@dss.com
+                
+    - !!models.Project
+        id:         11
+        name:       Private
+        folder:     Personal
+        members:
+            - !!models.User
+                email: agg180@alu.ua.es
                 
 # Task
 
-- !!models.Task
-    title:      Fix the documentation
-    done:       false
-    folder:     Todo
-    project:    *play2
-    assignedTo: *bob
+tasks:
+    
+    - !!models.Task
+        title:      Fix the documentation
+        done:       false
+        folder:     Todo
+        project:    !!models.Project
+                        id: 1
+        assignedTo: !!models.User
+                        email: carlos@dss.com
+                        
+    - !!models.Task
+        title:      Prepare the beta release
+        done:       false
+        folder:     Urgent
+        dueDate:    2011-11-15
+        project:    !!models.Project
+                        id: 1
+        assignedTo: !!models.User
+                        email: carlos@dss.com
 
-- !!models.Task
-    title:      Prepare the beta release
-    done:       false
-    folder:     Urgent
-    dueDate:    2011-11-15
-    project:    *play2
-    assignedTo: *bob
+    - !!models.Task
+        title:      Buy some milk
+        done:       false
+        folder:     Todo
+        project:    !!models.Project
+                        id: 9
 
-- !!models.Task
-    title:      Buy some milk
-    done:       false
-    folder:     Todo
-    project:    *privatebob
-
-- !!models.Task
-    title:      Check 1.2.4-RC2
-    done:       false
-    folder:     Todo
-    dueDate:    2011-11-18
-    project:    *play1
-    assignedTo: *bob
-
-- !!models.Task
-    title:      Finish zentask integration
-    done:       true
-    folder:     Todo
-    dueDate:    2011-11-15
-    project:    *privatejeff
-    assignedTo: *jeff
+    - !!models.Task
+        title:      Check 1.2.4-RC2
+        done:       false
+        folder:     Todo
+        dueDate:    2011-11-18
+        project:    !!models.Project
+                        id: 2
+        assignedTo: !!models.User
+                        email: carlos@dss.com
+                        
+    - !!models.Task
+        title:      Finish zentask integration
+        done:       true
+        folder:     Todo
+        dueDate:    2011-11-15
+        project:    !!models.Project
+                        id: 7
+        assignedTo: !!models.User
+                        email: agg180@alu.ua.es
+                        
+    - !!models.Task
+        title:      Release the secret project
+        done:       false
+        folder:     Todo
+        dueDate:    2012-01-01
+        project:    !!models.Project
+                        id: 4
+        assignedTo: !!models.User
+                        email: test@dss.com
+            

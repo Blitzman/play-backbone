@@ -4,17 +4,17 @@
 - &bob !!models.User
     email:      bob@example.com
     name:       Bob
-    pass:   secret
+    password:   secret
 
 - &jane !!models.User
     email:      jane@example.com
     name:       Jane
-    pass:   secret
+    password:   secret
 
 - &jeff !!models.User
     email:      jeff@example.com
     name:       Jeff
-    pass:   secret
+    password:   secret
     
 # Projects
 
@@ -102,5 +102,4 @@
     dueDate:    2011-11-15
     project:    *privatejeff
     assignedTo: *jeff
-
 
